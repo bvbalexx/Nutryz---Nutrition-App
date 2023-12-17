@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Log In</title>
+</head>
+<body>
+    <!-- Aici veți adăuga conținutul paginii de logare -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="separator"> | </span>
+
+        <button id="submit">Log In</button>
+
+        <span class="separator"> | </span>
+       
+    </form>
+    </div>
+</body>
+
+
+<script src="mongo.js"> </script>
+
+
+</html>

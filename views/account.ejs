@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css"> <!-- Aici vom lega fișierul CSS ulterior -->
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> Nutryz</a>
+      
+        
+
+
+        <nav class="navbar">
+           
+
+            
+
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+        </header>
+    <main>
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="profile-image.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h1><%= user.name %></h1>
+                <p>Email: <%= user.email %></p>
+                
+                <p>Country: <%= user.country %></p>
+                <!-- Alte detalii pot fi adăugate aici -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

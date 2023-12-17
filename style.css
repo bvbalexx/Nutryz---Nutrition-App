@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root{
+   --main-color:#29d978;
+   --primary:#f0fff7;
+   --black:#141414;
+   --white:#fff;
+   --bg: #f2f2f2;
+   --light-black:#666;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none; text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+ }
+ 
+ html{
+    font-size: 50%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+ }
+
+ html::-webkit-scrollbar{
+   width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+   background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+   background: var(--main-color);
+}
+
+ .header{
+    position: fixed;
+    top: 0; left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+ }
+ section{
+   padding: 3rem 9%;
+}
+
+.heading{
+   text-align: center;
+   color: var(--main-color);
+   text-transform: uppercase;
+   margin-bottom: 4rem;
+   margin-top: 2rem;
+   font-size: 4rem;
+}
+
+
+.btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   border: .1rem solid var(--main-color);
+   border-radius: .5rem;
+   cursor: pointer;
+   font-size: 1.7rem;
+   color: var(--main-color);
+}
+
+.btn:hover{
+   background: var(--main-color);
+   color: var(--white);
+}
+
+
+ .spacer {
+    margin-right:  1100px; /* Adăugați un spațiu de 10px între elementele de meniu. */
+    color: #999; /* Culorea separatorului vertical. */
+}
+
+.spacerr{
+    margin: 0  10px; /* Adăugați un spațiu de 10px între elementele de meniu. */
+    color: #999; /* Culorea separatorului vertical. */
+}
+.spacerrr{
+    margin: 0 2.5px; /* Adăugați un spațiu de 10px între elementele de meniu. */
+    color: #999; /* Culorea separatorului vertical. */
+}
+.header .logo{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+ }
+ 
+ .header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--black);
+ }
+ .header .navbar a:hover{
+   color: var(--main-color);
+}
+.header .navbar button{
+   font-size: 1.7rem;
+   margin-left: 2rem;
+   color: var(--black);
+}
+.header .navbar button:hover{
+   color: var(--main-color);
+}
+
+#menu{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color: var(--main-color);
+   display: none;
+}
+
+/* home */
+
+.home{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: url(images/home.jpg) no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.home .content{
+   max-width: 60rem;
+   text-align: center;
+}
+
+.home .content h3{
+   font-size: 5rem;
+   text-transform: uppercase;
+   color: var(--white);
+   padding-bottom: 3.5rem;
+}
+
+/* end */
+
+/* about */
+
+.about .row{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 2rem;
+}
+
+.about .row .content{
+   flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+   font-size: 3.5rem;
+   color: var(--black);
+   text-transform: uppercase;
+}
+
+.about .row .content p{
+   font-size: 1.6rem;
+   color: var(--light-black);
+   padding: 2rem 0;
+   line-height: 2;
+}
+
+
+.about .row .image{
+   flex: 1 1 40rem;
+}
+
+.about .row .image img{
+   width: 100%;
+}
+
+/* end */
+
+/* services */
+
+.services{
+   background: var(--bg);
+}
+
+.services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+   margin-top: 8rem;
+}
+
+.services .box-container .box{
+   text-align: center;
+   padding: 3rem;
+   background: var(--white);
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+   border-radius: 1rem;
+   margin-bottom: 8rem;
+}
+
+.services .box-container .box:hover,
+.services .box-container .box:hover .icon{
+   background: var(--primary);
+}
+
+.services .box-container .box .icon{
+   width: 13rem;
+   height: 13rem;
+   line-height: 13rem;
+   background: var(--white);
+   border-radius: 50%;
+   margin: -11rem auto 2rem;
+   border: 1.8rem solid var(--bg);
+}
+
+.services .box-container .box .icon img{
+   width: 5rem;
+   margin-top: 2rem;
+}
+
+.services .box-container .box .content h3{
+   font-size: 2rem;
+   padding: 1rem 0;
+   color: var(--main-color);
+}
+
+.services .box-container .box .content .line{
+   background: var(--main-color);
+   width: 30%;
+   height: .4rem;
+   margin: 2rem auto;
+   border-radius: 5rem;
+}
+
+.services .box-container .box .content p{
+   font-size: 1.4rem;
+   color: var(--black);
+   line-height: 2;
+}
+
+.services .box-container .box .content ul{
+   margin: 2rem 0;
+   list-style: none;
+   align-content: left;
+  
+}
+
+.services .box-container .box .content ul li{
+   padding: .5rem;
+   font-size: 1.4rem;
+   color: var(--black);
+   display:flex
+}
+
+.services .box-container .box .content ul li i{
+   font-size: 1.4rem;
+   columns: var(--white);
+   padding: .5rem;
+   margin-right: 1rem;
+   background: var(--main-color);
+   border-radius: 70%;
+   
+}
+
+/* end */
+
+
+
+/* login start */
+
+.login-container {
+   width: 300px; /* Ajustați lățimea la nevoie */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background-color: #f9f9f9;
+   text-align: center;
+}
+
+.login-container h2 {
+   margin-bottom: 20px;
+   font-size: 300%;
+}
+
+.login-container label {
+   display: block;
+   text-align: left;
+   font-size: 150%;
+}
+
+.login-container input {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.login-container button {
+   width: 100%;
+   padding: 10px;
+   background-color: #29d978;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.login-container button:hover {
+   background-color: #1eab63;
+}
+
+.separator {
+   margin: 0 5px; /* Ajustați mărimea separatorului la nevoie */
+   color: #999; /* Culorea separatorului */
+   
+}
+
+/* login end */
+
+
+
+
+
+
+/* Resetare stil implicit a browser-ului */
+body, h1, h2, p {
+   margin: 0;
+   padding: 0;
+}
+
+/* Stiluri generale pentru pagina */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+}
+
+header {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 1rem 0;
+}
+
+nav ul {
+   list-style: none;
+}
+
+nav li {
+   display: inline;
+   margin-right: 20px;
+}
+
+nav a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.profile-container {
+   display: flex;
+   width: 70%;
+   align-items: flex-start;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   height: 70%;
+}
+
+.profile-image {
+   width: 150px; /* Lățimea imaginii de profil */
+   height: 150px; /* Înălțimea imaginii de profil */
+   overflow: hidden; /* Ascundeți conținutul care depășește dimensiunile pătratului */
+   background-color: #f0f0f0; /* Culoarea de fundal pentru pătrat */
+   margin-right: 20px; /* Spațierea între imaginea de profil și restul conținutului */
+}
+
+.profile-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Asigurați-vă că imaginea se potrivește în întregul pătrat */
+}
+.profile-info {
+   width: calc(100% - 150px - 20px); /* Lățimea conținutului, luând în considerare spațiul ocupat de imagine */
+   background-color: var(--primary); /* Adăugați culoarea de fundal aici */
+   padding: 2rem;
+   font-size: 1.8rem;
+}
+
+.profile-info h1 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+}
+
+.profile-info p {
+   font-size: 1.8rem;
+   margin-bottom: 5px;
+
+}
