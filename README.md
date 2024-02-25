@@ -17,6 +17,7 @@ Personal Details:
 
 Users can add personal information such as name, birthdate, country, etc.
 User Profile: Ability to upload a profile picture and personalize the profile appearance.
+
 Secure Authentication System:
 
 Registration and Login: The registration and login process is secure and user-friendly.
